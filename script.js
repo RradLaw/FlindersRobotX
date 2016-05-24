@@ -25,3 +25,9 @@ function toggleLayer(layerID) {
     if(img.style.visibility=="visible") img.style.visibility = 'hidden';
     else img.style.visibility = 'visible';
 }
+
+function showDialog() {
+    if(!$( "#dialog" ).dialog("isOpen")) {
+        $( "#dialog" ).dialog("open");
+    }
+}

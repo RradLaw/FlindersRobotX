@@ -30,6 +30,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+    <!-- jquery ui for dialog box -->
+    <link href="./jqueryui/jquery-ui.min.css" rel="stylesheet">
+    <link href="./jqueryui/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="./jqueryui/jquery-ui.theme.min.css" rel="stylesheet">
+    
     <script src="script.js"></script>
   </head>
 
@@ -89,6 +94,18 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
-  
+    
+    
+    <!-- jquery ui for dialog boxes -->
+    <script src="./jqueryui/jquery-ui.min.js"></script>
+    <script>
+    $(function() {
+      $( "#dialog" ).dialog();
+      $( "#dialog" ).dialog("close");
+    });
+    </script>
+    <div id="dialog" title="Basic dialog">
+      <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
 
 </body></html>
