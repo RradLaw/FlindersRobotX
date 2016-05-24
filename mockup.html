@@ -12,17 +12,17 @@
     <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./Dashboard Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./Dashboard Template for Bootstrap_files/dashboard.css" rel="stylesheet">
+    <link href="./css/dashboard.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./Dashboard Template for Bootstrap_files/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+    <script src="./js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://getbootstrap.com/examples/dashboard/#">RobotX</a>
+          <a class="navbar-brand" href="#">RobotX</a>
         </div>
       </div>
     </nav>
@@ -55,9 +55,9 @@
           <ul class="nav nav-sidebar">
             <li id="back" class="active"><a href="#" onclick="toggleLayer('back')">Backing Map <span class="sr-only">(current)</span></a></li>
             <li id="obs"><a href="#" onclick="toggleLayer('obs')">Obstacles</a></li>
-            <li id="aoi"><a href="#">Areas of Interest</a></li>
-            <li id="traj"><a href="#">Trajectory</a></li>
-            <li id="points"><a href="#">Points</a></li>
+            <li id="aoi"><a href="#" onclick="toggleLayer('aoi')">Areas of Interest</a></li>
+            <li id="traj"><a href="#" onclick="toggleLayer('traj')">Trajectory</a></li>
+            <li id="points" class="active"><a href="#" onclick="toggleLayer('points')">Points</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><h2>Current</h2></li>
@@ -71,9 +71,9 @@
           <div class="row placeholders">
             <img id="backImg" src="backingmap.jpg" style="position: absolute;display:block;visibility:visible;">
             <img id="obsImg" src="obstacles.png" style="position: absolute;display:block;visibility:hidden;">
-            <img id="aoiImg" src="areaofinterest.jpg" style="position: absolute;display:block;">
-            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;">
-            <img id="pointsImg" src="points.png" style="position: absolute;display:block;">
+            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;visibility:hidden;">
+            <img id="pointsImg" src="points.png" style="position: absolute;display:block;visibility:visible;">
+            <img id="aoiImg" src="areasofinterest.png" style="position: absolute;display:block;visibility:hidden;">
           </div>
 
         </div>
@@ -83,11 +83,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Dashboard Template for Bootstrap_files/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./Dashboard Template for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
   
 
 </body></html>
