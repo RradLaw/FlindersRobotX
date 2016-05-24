@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Web RobotX Mockup</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -56,13 +56,14 @@
             <li id="back" class="active"><a href="#" onclick="toggleLayer('back')">Backing Map <span class="sr-only">(current)</span></a></li>
             <li id="obs"><a href="#" onclick="toggleLayer('obs')">Obstacles</a></li>
             <li id="aoi"><a href="#" onclick="toggleLayer('aoi')">Areas of Interest</a></li>
-            <li id="traj"><a href="#" onclick="toggleLayer('traj')">Trajectory</a></li>
+            <li id="traj" class="active"><a href="#" onclick="toggleLayer('traj')">Trajectory</a></li>
             <li id="points" class="active"><a href="#" onclick="toggleLayer('points')">Points</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><h2>Current</h2></li>
             <li>Depth: 20m</li>
             <li>Speed: 10 knots</li>
+            <li>Direction: 135 deg</li>
             <li>Location: 40.7127837 -74.00594132</li>
           </ul>
         </div>
@@ -71,7 +72,7 @@
           <div class="row placeholders">
             <img id="backImg" src="backingmap.jpg" style="position: absolute;display:block;visibility:visible;">
             <img id="obsImg" src="obstacles.png" style="position: absolute;display:block;visibility:hidden;">
-            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;visibility:hidden;">
+            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;visibility:visible;">
             <img id="pointsImg" src="points.png" style="position: absolute;display:block;visibility:visible;">
             <img id="aoiImg" src="areasofinterest.png" style="position: absolute;display:block;visibility:hidden;">
           </div>
