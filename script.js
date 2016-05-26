@@ -29,5 +29,6 @@ function toggleLayer(layerID) {
 function showDialog() {
     if(!$( "#dialog" ).dialog("isOpen")) {
         $( "#dialog" ).dialog("open");
+        
     }
 }

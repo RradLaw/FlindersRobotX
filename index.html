@@ -64,8 +64,7 @@
             <li id="traj" class="active"><a href="#" onclick="toggleLayer('traj')">Trajectory</a></li>
             <li id="points" class="active"><a href="#" onclick="toggleLayer('points')">Points</a></li>
           </ul>
-          <ul class="nav nav-sidebar">
-            <li><h2>Current</h2></li>
+          <ul class="nav nav-sidebar" style="padding-left:10px;">
             <li>Depth: 20m</li>
             <li>Speed: 10 knots</li>
             <li>Direction: 135 deg</li>
@@ -75,11 +74,11 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
           <div class="row placeholders">
-            <img id="backImg" src="backingmap.jpg" style="position: absolute;display:block;visibility:visible;">
-            <img id="obsImg" src="obstacles.png" style="position: absolute;display:block;visibility:hidden;">
-            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;visibility:visible;">
-            <img id="pointsImg" src="points.png" style="position: absolute;display:block;visibility:visible;">
-            <img id="aoiImg" src="areasofinterest.png" style="position: absolute;display:block;visibility:hidden;">
+            <img id="backImg" src="backingmap.jpg" style="position: absolute;display:block;visibility:visible;" onclick="showDialog()">
+            <img id="obsImg" src="obstacles.png" style="position: absolute;display:block;visibility:hidden;" onclick="showDialog()">
+            <img id="trajImg" src="trajectory.png" style="position: absolute;display:block;visibility:visible;" onclick="showDialog()">
+            <img id="pointsImg" src="points.png" style="position: absolute;display:block;visibility:visible;" onclick="showDialog()">
+            <img id="aoiImg" src="areasofinterest.png" style="position: absolute;display:block;visibility:hidden;" onclick="showDialog()">
           </div>
 
         </div>
@@ -103,9 +102,13 @@
       $( "#dialog" ).dialog();
       $( "#dialog" ).dialog("close");
     });
+    
     </script>
-    <div id="dialog" title="Basic dialog">
-      <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    <div id="dialog" title="Point 1251" style="width:100px;">
+      <center>Depth: 10.125 m</center>
+      <a class="btn btn-default center-block" href="#" role="button">Mark Point of Interest</a>
+      <a class="btn btn-default center-block" href="#" role="button">Request Image</a>
+      <a class="btn btn-default center-block" href="#" role="button" disabled="disabled">View Image</a>
     </div>
 
 </body></html>
